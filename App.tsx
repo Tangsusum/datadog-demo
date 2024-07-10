@@ -6,19 +6,14 @@
  */
 
 import * as React from 'react';
-import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import CheckoutScreen from './components/screens/CheckoutScreen';
-
-function HomeScreen() {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Screen</Text>
-    </View>
-  );
-}
-
+import HomeScreen from './components/screens/HomeScreen';
+import ProfileScreen from './components/screens/ProfileScreen';
+import HomeIcon from './assests/HomeIcon';
+import CartIcon from './assests/CartIcon';
+import PersonIcon from './assests/PersonIcon';
 
 
 const Tab = createBottomTabNavigator();
@@ -26,9 +21,39 @@ const Tab = createBottomTabNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Checkout" component={CheckoutScreen} />
+      <Tab.Navigator screenOptions={{
+        tabBarActiveTintColor: '#632ca6',
+      }}>
+        <Tab.Screen 
+          name="Home" 
+          component={HomeScreen} 
+          options={{
+            tabBarLabel: 'Home',
+            tabBarIcon: ({ color }) => (
+              <HomeIcon color={color} />
+            ),
+          }}
+        />
+        <Tab.Screen 
+          name="Shopping Cart" 
+          component={CheckoutScreen} 
+          options={{
+            tabBarLabel: 'Shopping Cart',
+            tabBarIcon: ({ color }) => (
+              <CartIcon color={color} />
+            ),
+          }}
+        />
+        <Tab.Screen 
+          name="Profile" 
+          component={ProfileScreen}
+          options={{
+            tabBarLabel: 'Profile',
+            tabBarIcon: ({ color }) => (
+              <PersonIcon color={color} />
+            ),
+          }}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );
