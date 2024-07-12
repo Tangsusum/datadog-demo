@@ -10,18 +10,17 @@ const items = [
 
 function CheckoutScreen() {
 
-    const onCheckout = () => {}
+    const onCheckout = () => {
+        // custom event on checkout button press
+    }
 
     return (
-        <>
-            <View style={{padding: 8, gap: 8 }}>
-                {items.map((item, key) => <ItemCard key={key} title={item.title} description={item.description} image={item.img} />)}
-                <TouchableOpacity style={{backgroundColor: '#632ca6', padding: 16, borderRadius: 8, alignItems: 'center'}} onPress={onCheckout}>
-                    <Text style={{color: 'white', fontWeight: 'bold'}}>Checkout</Text>
-                </TouchableOpacity>
-            </View>
-        
-        </>
+        <View style={{padding: 8, gap: 8 }}>
+            {items.map((item, key) => <ItemCard key={key} title={item.title} description={item.description} image={item.img} />)}
+            <TouchableOpacity style={{backgroundColor: '#632ca6', padding: 16, borderRadius: 8, alignItems: 'center'}} onPress={onCheckout}>
+                <Text style={{color: 'white', fontWeight: 'bold'}}>Checkout</Text>
+            </TouchableOpacity>
+        </View>
 
     );
 }
