@@ -5,7 +5,7 @@ const items = [
     {title: 'Item 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.', img: 'https://datadog-careers.imgix.net/img/card-images/guilds/Bits_Women.png?auto=format&h=160&fit=crop&dpr=2'},
     {title: 'Item 2', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', img: 'https://datadog-careers.imgix.net/img/card-images/guilds/Bits_Veterans.png?auto=format&h=160&fit=crop&dpr=2'},
     {title: 'Item 3', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', img: 'https://datadog-careers.imgix.net/img/card-images/guilds/Bits_Latinx.png?auto=format&h=160&fit=crop&dpr=2'},
-    {title: 'Item 3', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', img: 'https://datadog-careers.imgix.net/img/card-images/guilds/Bits_Black_in_Tech.png?auto=format&h=160&fit=crop&dpr=2'}
+    {title: 'Item 4', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', img: 'https://datadog-careers.imgix.net/img/card-images/guilds/Bits_Black_in_Tech.png?auto=format&h=160&fit=crop&dpr=2'}
 ]
 
 function CheckoutScreen() {
