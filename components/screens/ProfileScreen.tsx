@@ -7,11 +7,13 @@ function ProfileScreen() {
 
     const onDisableTracking = async () => {
         // On disable vexo analytics tracking button press
+
         setModalProps({visible: true, title: 'Success - Opt-out', desc: 'You have successfully opt-out of Vexo Analytics tracking'})
     }
 
     const onEnableTracking = async () => {
         // On enable vexo analytics tracking button press
+        
         setModalProps({visible: true, title: 'Success - Opt-in', desc: 'You have successfully opt-in of Vexo Analytics tracking'})
     }
 
