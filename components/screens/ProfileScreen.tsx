@@ -1,19 +1,20 @@
 import * as React from 'react';
 import { View, Text, Image, TouchableOpacity, Modal } from 'react-native';
 import SuccessIcon from '../../assests/SuccessIcon';
+import { enableTracking, disableTracking } from 'vexo-analytics'
 
 function ProfileScreen() {
     const [modalProps, setModalProps] = React.useState({visible: false, title: '', desc: ''})
 
     const onDisableTracking = async () => {
         // On disable vexo analytics tracking button press
-
+        // await disableTracking();
         setModalProps({visible: true, title: 'Success - Opt-out', desc: 'You have successfully opt-out of Vexo Analytics tracking'})
     }
 
     const onEnableTracking = async () => {
         // On enable vexo analytics tracking button press
-        
+        await enableTracking();
         setModalProps({visible: true, title: 'Success - Opt-in', desc: 'You have successfully opt-in of Vexo Analytics tracking'})
     }
 

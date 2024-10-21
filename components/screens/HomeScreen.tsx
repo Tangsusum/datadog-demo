@@ -29,7 +29,7 @@ const HomeCard = ({title, description, image}: {title: string, description: stri
                 uri: image,
                 }}
             />
-            <View style={{padding: 16, backgroundColor: 'white', borderBottomLeftRadius: 8,  borderBottomRightRadius: 8, flexDirection: 'column', gap: 8}}>
+            <View style={{padding: 16, backgroundColor: 'white', borderBottomLeftRadius: 8,  borderBottomRightRadius: 8, flexDirection: 'column', gap: 8, width: 365}}>
                 <Text style={{fontWeight: 'bold'}}>{title}</Text>
                 <Text>{description}</Text>
                 <TouchableOpacity>
